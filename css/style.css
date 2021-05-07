@@ -1,3 +1,32 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-image: url("http://saulfein.github.io/cookie-stand/img/salmon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    margin-top: 45px;
+}
+
+
+/* header {
+    background-color: darkcyan;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+h1 {
+    font-size: 25px;
+    text-align: center;
+}
+header nav ul li  {
+    display: inline-block;
+    padding: 0 150px;
+    color: black;
+    text-emphasis: none;
+     */
+
 header h1 {
     background-color: rgb(212, 113, 102);
     font-family: sans-serif;
@@ -22,6 +51,15 @@ ul {
     font-size: 20px;
 }
 
+main ol li {
+    margin: 30px;
+    padding-left: 10px;
+}
+
+
+
+table, th, td{
+    border: 1px solid blueviolet;
 footer {
     text-align: center;
     background-color: wheat;
