@@ -1,7 +1,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    background-image: url("http://saulfein.github.io/cookie-stand/img/salmon.png");
+    /* background-image: url("http://saulfein.github.io/cookie-stand/img/salmon.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 350px;
@@ -29,9 +29,38 @@ header nav ul li  {
 
 header h1 {
     background-color: rgb(212, 113, 102);
-    font-family: sans-serif;
+    text-align: center;
+    font-size: 45px;
+    font-family: ui-serif;
+    position: relative;
 }
 
+  ul  {
+    display: table-caption;
+    font-size: 20px;
+    text-decoration: none;
+}
+#img {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+}
+
+#img2{
+    position: relative;
+    left: 188px;
+}
+
+main{
+    position: relative;
+}
+
+h2 {
+    background-color: saddlebrown;
+    font-size: 29px;
+    font-family: cursive;
+    text-align: center;
+}
 
 main p { 
     font-size: x-large;
@@ -39,17 +68,34 @@ main p {
     color: sienna;
 }
 
-h2 {
-    background-color: saddlebrown;
-    font-size: 29px;
-    font-family: cursive;
+#m1 {
+    position: absolute;
+    left: 850px;
+    top: 264px;
+}
+#m2{
+    position: absolute;
+    left: 900px;
+    top: 450px;
+}
+
+#m4{
+     position: absolute; 
+    left: 859px;
+    bottom: 200px; 
+}
+ #m5{
+    position: absolute;
+    left: 363px;
+ }
+
+h3{
+    font-family: ui-sans-serif;
+    font-size: 28px;
 }
 
 
-ul {
-    display: table-caption;
-    font-size: 20px;
-}
+
 
 main ol li {
     margin: 30px;
@@ -57,6 +103,17 @@ main ol li {
 }
 
 
+h4{
+    font-size: 19px;
+    font-family: ui-serif;
+}
+
+h6{
+    position: absolute;
+    top: 40px;
+    font-size: 22px;
+    font-family: cursive;
+}
 
 
 footer {
@@ -72,10 +129,16 @@ table, th, td {
 
 #form {
     position: relative ;
-    top: 520px;
+    top: 150px;
 }
 
 #table {
     position: relative ;
-    top: 500px;
+    top: 100px;
+}
+
+
+#uls{
+    position: absolute;
+    top: 42px;
 }
