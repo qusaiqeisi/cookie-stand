@@ -80,8 +80,8 @@ let lima = new shop('Lima', 2, 16, 4.6);
 
 //dom
 // get the parent
-let parent = document.getElementById('parent');
-console.log(parent);
+let parent = document.getElementById('table');
+// console.log(parent);
 
 
 let table =document.createElement('table');
@@ -143,7 +143,7 @@ for (let i = 0; i < shops.length; i++) {
     shops[i].render();
 
 }
-console.log(shops);
+// console.log(shops);
 
 
 
@@ -170,6 +170,7 @@ let tot = 0;
         let footerThTotal=document.createElement('th');
         footerRow.appendChild(footerThTotal);
         footerThTotal.textContent= totalEachHour;
+        tot += totalEachHour ;
     }
     let TOT = document.createElement('th');
     footerRow.appendChild(TOT);
@@ -177,3 +178,48 @@ let tot = 0;
 }
 
 makFooter();
+
+
+
+
+/////////////////////////////////formevent//////////////////////////////
+
+let brancHForm = document.getElementById('form');
+brancHForm.addEventListener('submit', submitter);
+
+
+
+function submitter(event){
+    event.preventDefault();
+
+
+
+
+    let name = event.target.branchName.value ;
+    console.log('name'+name);
+    let MinC  = event.target.MinC.value ;
+    console.log('name'+MinC);
+    let MaxC = event.target.MaxC.value ;
+    console.log('name'+MaxC);
+    let cpc = event.target.cpc.value ;
+    console.log('name'+cpc);
+    
+    let branchAdd = new shop(name,MinC,MaxC,cpc);
+    branchAdd.calcCustomerEachHour();
+    branchAdd.calcCookiesEachHour();
+    branchAdd.render();
+    table.textContent = ' ';
+
+    makeHeader();
+
+    for (let i = 0; i < shops.length; i++) {
+        shops[i].calcCustomerEachHour();
+        // shops[i].calcCookiesEachHour();
+        shops[i].render();
+      
+        
+    }
+    makFooter();
+}
+
+

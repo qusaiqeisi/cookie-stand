@@ -58,9 +58,24 @@ main ol li {
 
 
 
-table, th, td{
-    border: 1px solid blueviolet;
+
 footer {
     text-align: center;
     background-color: wheat;
+}
+
+
+table, th, td {
+    border: 2px solid rgb(31, 20, 41);
+    
+}
+
+#form {
+    position: relative ;
+    top: 520px;
+}
+
+#table {
+    position: relative ;
+    top: 500px;
 }

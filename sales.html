@@ -1,26 +1,57 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-  <title>Sales Data:  Salmon Cookies land</title>
+  <title>Sales Data: Salmon Cookies land</title>
 </head>
-<body>
-    <header>
-        <h1>our market shop</h2>
-    </header>
-    <main>
-        <h2>our avalibel shop around contryes </h2>
-        <div id="parent"></div>
- 
 
 <body>
-  <h1> Salmon Cookies land: Sales Data</h1>
-  <div id="parent"></div>
-  <!-- <h2>Seattle</h2>
+  <header>
+    <h1>our market shop</h2>
+  </header>
+  <main>
+    <h2>our avalibel shop around contryes </h2>
+    <div id="table"></div>
+    <div>
+      <form id="form">
+        <fieldset>
+
+          <label for="branchName"> branch Name</label>
+          <input type="text" name="branchName" required>
+          <br>
+          <br>
+
+          <label for="MinC"> Min customer per hour</label>
+          <input type="number" name="MinC" required>
+          <br>
+          <br>
+
+          <label for="MaxC"> Max customer per hour</label>
+          <input type="number" name="MaxC" required>
+          <br>
+          <br>
+
+          <label for="cpc">Num of cookies for single customer</label>
+          <input type="number" name="cpc" required>
+          <br>
+          <br>
+
+          <input type="submit" value="submit">
+
+        </fieldset>
+      </form>
+
+    </div>
+
+
+
+    <body>
+      <h1> Salmon Cookies land: Sales Data</h1>
+      <!-- <div id="parent"></div> -->
+      <!-- <h2>Seattle</h2>
   <ul id="seattle"></ul>
   <h2>Tokyo</h2>
   <ul id="tokyo"></ul>
@@ -30,7 +61,7 @@
   <ul id="paris"></ul>
   <h2>Lima</h2>
   <ul id="lima"></ul> -->
-  <script src="js/app.js"></script>
-</body>
+      <script src="js/app.js"></script>
+    </body>
 
 </html>
