@@ -209,7 +209,7 @@ function submitter(event){
     branchAdd.calcCookiesEachHour();
     branchAdd.render();
     table.textContent = ' ';
-
+    brancHForm.reset();
     makeHeader();
 
     for (let i = 0; i < shops.length; i++) {
